@@ -29,7 +29,7 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Hyperlink fx:id="hostLink" layoutX="83.0" layoutY="232.0" prefHeight="27.0" prefWidth="170.0">
+      <Hyperlink fx:id="hostLink" layoutX="83.0" layoutY="232.0" onMouseClicked="#onClicked" prefHeight="27.0" prefWidth="170.0">
          <font>
             <Font size="13.0" />
          </font>
