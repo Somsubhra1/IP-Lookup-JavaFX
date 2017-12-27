@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextField fx:id="textField" layoutX="48.0" layoutY="136.0" prefHeight="29.0" prefWidth="205.0" promptText="Enter:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="48.0" layoutY="90.0" prefHeight="22.0" prefWidth="82.0" text="Enter URL:" textFill="#2434e1" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="115.0" layoutY="195.0" mnemonicParsing="false" onAction="#onButtonPressed" prefHeight="25.0" prefWidth="70.0" text="Look Up">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="ipLabel" layoutX="48.0" layoutY="269.0" prefHeight="22.0" prefWidth="205.0" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="hostLink" layoutX="83.0" layoutY="232.0" prefHeight="27.0" prefWidth="170.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="hostLabel" layoutX="48.0" layoutY="235.0" prefHeight="22.0" prefWidth="35.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
