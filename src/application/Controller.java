@@ -5,7 +5,11 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.awt.*;
+import java.io.IOException;
 import java.net.InetAddress;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class Controller {
 
@@ -33,6 +37,23 @@ public class Controller {
             hostLink.setText("");
             hostLabel.setText("");
             ipLabel.setText("Error Occurred!!");
+        }//end of try/catch
+    }
+
+    @FXML
+    public void onClicked() { //Performs when the link is clicked: opens in a browser
+        try {
+            URI uri = new URI(hostLink.getText());
+            Desktop desktop = null;
+            if (Desktop.isDesktopSupported()) {
+                desktop = Desktop.getDesktop();
+            }
+            if (desktop != null)
+                desktop.browse(uri);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } catch (URISyntaxException use) {
+            use.printStackTrace();
         }//end of try/catch
     }
 }
